@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Restaurante</title>
+    <link rel="stylesheet" href="adminStyle.css">
+<body>
+    <div class="fondo">
+        <div class="container">
+            <h1>Panel de Administrador</h1>
+            <button onclick="mostrarFormulario()">Agregar Plato</button>
+            <button onclick="verOrdenes()">Ver Órdenes</button>
+    
+            <div id="formulario" style="display: none;">
+                <h2>Agregar Nuevo Plato</h2>
+                <input type="text" id="nombrePlato" placeholder="Nombre del plato">
+                <select id="categoriaPlato">
+                    <option value="Sopas">Sopas</option>
+                    <option value="Platos fuertes">Platos fuertes</option>
+                    <option value="Jugos">Jugos</option>
+                </select>
+                <input type="number" id="precioPlato" placeholder="Precio">
+                <button onclick="agregarPlato()">Guardar</button>
+            </div>
+    
+            <h2>Menú Actual</h2>
+            <ul id="listaPlatos"></ul>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

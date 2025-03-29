@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente - Restaurante</title>
+    <link rel="stylesheet" href="clienteStyle.css">
+</head>
+
+<body>
+    <div class="fondo">
+        <div class="container">
+            <h1>Menú del Restaurante</h1>
+            <div id="menu">
+                <h2>Sopas</h2>
+                <ul id="sopas"></ul>
+                <h2>Platos Fuertes</h2>
+                <ul id="platosFuertes"></ul>
+                <h2>Jugos</h2>
+                <ul id="jugos"></ul>
+            </div>
+
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito"></ul>
+            <p><strong>Total:</strong> $<span id="total">0</span></p>
+            <button onclick="confirmarPedido()">Confirmar Pedido</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
