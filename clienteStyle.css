@@ -5,7 +5,7 @@
 }
 
 .fondo {
-    background-image: url(../img/cliente.jpg);
+    background-image: url(cliente.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
